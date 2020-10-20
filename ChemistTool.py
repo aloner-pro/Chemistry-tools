@@ -2,31 +2,33 @@
 from tkinter import *
 from tkinter import messagebox
 from tkinter import ttk
-desk=Tk()
+desk = Tk()
 desk.title("Welcome to Chemist's Tools")
 desk.geometry('350x300')
 desk.wm_iconbitmap('logos\\cal3.ico')
-lb=Label(desk,text="Chemist's\nTools",font=('Britannic Bold',30))
-lb.grid(column=0,row=0)
+lb = Label(desk, text="Chemist's\nTools", font=('Britannic Bold', 30))
+lb.grid(column=0, row=0)
 selected = IntVar()
-rad1 = ttk.Radiobutton(desk,text='Periodic Table', value=1, variable=selected)
-rad2 = ttk.Radiobutton(desk,text='Chemistry\nCalculator', value=2, variable=selected)
+rad1 = ttk.Radiobutton(desk, text='Periodic Table', value=1, variable=selected)
+rad2 = ttk.Radiobutton(desk, text='Chemistry\nCalculator', value=2, variable=selected)
 rad1.grid(column=0, row=1)
 rad2.grid(column=0, row=2)
+
+
 def to_know(event=None):
-    if selected.get()==1:
+    if selected.get() == 1:
         window = Tk()        
         window.title('Periodic Table')
         window.geometry('1350x750')
         window.wm_iconbitmap('logos\\logo1.ico')
-        lbl = Label(window, text="Click on\n Element \n to know \ninfo about it",font=('Britannic Bold',10))
+        lbl = Label(window, text="Click on\n Element \n to know \ninfo about it", font=('Britannic Bold', 10))
         lbl.grid(column=0, row=0)
-        l1=Label(window,text='Gas\nElements',font=('Britannic Bold',10))
-        l1.grid(column=1,row=0)
-        l2=Label(window,text='Liquid\nElements',fg='green',font=('Britannic Bold',10))
-        l2.grid(column=2,row=0)
+        l1 = Label(window, text='Gas\nElements', font=('Britannic Bold', 10))
+        l1.grid(column=1, row=0)
+        l2 = Label(window, text='Liquid\nElements', fg='green', font=('Britannic Bold', 10))
+        l2.grid(column=2, row=0)
 
-        #First Group
+        # First Group
         def click():
             messagebox.showinfo('Element Information','H\nHydrogen\nAtomic No. is 1\nMass No. is 1.0074')
         btn1=Button(window,text='H\nHydrogen',bg='light green',fg='black',width=10,height=5,font=('Britannic Bold',10),command=click)

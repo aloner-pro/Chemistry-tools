@@ -1,3 +1,7 @@
+#Update
+**Reworking on this**
++Redoing this with updated knowledge.Main objective to lessen the lines of code.
+
 # Periodic Table
 ## And basic chemical calculaor
 ---

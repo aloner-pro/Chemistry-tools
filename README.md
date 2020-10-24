@@ -1,6 +1,8 @@
 # Periodic Table
-**Update Reworking on this**
-+ Redoing this with updated knowledge.Main objective to lessen the lines of code.
+**Update Reworking on this**<br>
++ Redoing this with updated knowledge.<br>
++ Main objective to lessen the lines of code.<br>
++ Upgrading the look and feel of the periodic table.
 
 ## And basic chemical calculaor
 ---

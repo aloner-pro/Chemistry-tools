@@ -3,7 +3,7 @@
 ---
 **This contains the following features**
 + Periodic Table
-+ Moles calculaor
++ Moles calculator
 + **Concentration Terms like-**
   1. Mass Percentage
   2. Mole Fraction

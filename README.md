@@ -4,7 +4,7 @@
 + Main objective to lessen the lines of code.<br>
 + Upgrading the look and feel of the periodic table.
 
-## And basic chemical calculaor
+## And basic chemical calculator
 ---
 **This contains the following features**
 + Periodic Table

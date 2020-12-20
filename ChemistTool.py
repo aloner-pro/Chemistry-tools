@@ -1,4 +1,5 @@
 # program to display periodic table and more
+# PERIODIC TABLE
 from tkinter import *
 from tkinter import messagebox
 from tkinter import ttk

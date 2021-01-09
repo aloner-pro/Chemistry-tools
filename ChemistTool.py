@@ -1,10 +1,11 @@
 # program to display periodic table and more
 from tkinter import *
 import package.hovering as ho
-import pandas as pd
+from pandas import read_csv
 
-data = pd.read_csv('queried.csv')
+data = read_csv('queried.csv')
 value = [i for i in data['Group'] if str(i) != 'nan']
+value.sort()
 print([int(j) for j in value])
 
 root = Tk()

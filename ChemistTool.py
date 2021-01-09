@@ -1,6 +1,11 @@
 # program to display periodic table and more
 from tkinter import *
 import package.hovering as ho
+import pandas as pd
+
+data = pd.read_csv('queried.csv')
+value = [i for i in data['Group'] if str(i) != 'nan']
+print([int(j) for j in value])
 
 root = Tk()
 root.title('Periodic Table')
@@ -19,7 +24,12 @@ def elements_display(ele_name: str, at_no: int, ele_sym: str, at_mass: float, bu
                                    f'\nAtomic Mass: {at_mass}')
 
 
-bu_check = Button(root, text='Check')
-bu_check.pack()
-elements_display('Hydrogen', 1, 'H', 1.007, bu_check)
+for i in range(7):
+    bu_check = Button(root, text='Check', height=5, width=10)
+    bu_check.place(x=5, y=80 + i * 85)
+    elements_display('Hydrogen', 1, 'H', 1.007, bu_check)
+
+exit_bu = Button(root, text='Exit', command=root.destroy, bg='red', fg='yellow')
+exit_bu.place(x=1100, y=600)
+ho.create_tool_tip(exit_bu, "Closes the window")
 root.mainloop()

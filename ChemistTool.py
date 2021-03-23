@@ -10,7 +10,7 @@ with open('queried.csv', 'r') as d:
         if i[-3] != '':
             data.append(i)
     g1 = []
-    for k in range(18):
+    for k in range(19):
         for j in data:
             if int(j[-3]) == k:
                 g1.append(j)
@@ -32,11 +32,40 @@ def elements_display(ele_name: str, at_no: int, ele_sym: str, at_mass: float, bu
                                    f'\nAtomic Mass: {at_mass}')
 
 
-for i in range(7):
-    bu_check = Button(root, text=g1[i][0], height=5, width=10)
-    bu_check.place(x=5, y=80 + i * 85)
-    elements_display(g1[i][1], g1[i][2], g1[i][0], g1[i][3], bu_check)
+def ele_7(ele_list, x_):
+    for a in range(7):
+        du = ele_list[a]
+        bu_check2 = Button(root, text=du[0], height=4, width=8)
+        bu_check2.place(x=x_, y=55 + a * 70)
+        elements_display(du[1], du[2], du[0], du[3], bu_check2)
 
+
+def ele_6(ele_list, x_):
+    for a in range(6):
+        du = ele_list[a]
+        bu_check2 = Button(root, text=du[0], height=4, width=8)
+        bu_check2.place(x=x_, y=125 + a * 70)
+        elements_display(du[1], du[2], du[0], du[3], bu_check2)
+
+
+def ele_4(ele_list, x_):
+    for a in range(4):
+        du = ele_list[a]
+        bu_check2 = Button(root, text=du[0], height=4, width=8)
+        bu_check2.place(x=x_, y=265 + a * 70)
+        elements_display(du[1], du[2], du[0], du[3], bu_check2)
+
+
+ele_7(g1[:7], 4)
+ele_6(g1[7:13], 70)
+
+for y in range(10):
+    ele_4(g1[13+(4*y):17+(4*y)], 136+(66*y))
+
+for z in range(5):
+    ele_6(g1[53+(6*z):59+(6*z)], 796+(66*z))
+
+ele_7(g1[83:90], 1126)
 exit_bu = Button(root, text='Exit', command=root.destroy, bg='red', fg='yellow')
 exit_bu.place(x=1100, y=600)
 ho.create_tool_tip(exit_bu, "Closes the window")

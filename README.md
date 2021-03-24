@@ -1,14 +1,8 @@
 # Periodic Table
-**Update Reworking on this**<br>
-+ Redoing this with updated knowledge.<br>
-+ Main objective to lessen the lines of code.<br>
-+ Upgrading the look and feel of the periodic table.
-
-## And basic chemical calculaor
 ---
 **This contains the following features**
 + Periodic Table
-+ Moles calculaor
++ Moles calculator
 + **Concentration Terms like-**
   1. Mass Percentage
   2. Mole Fraction

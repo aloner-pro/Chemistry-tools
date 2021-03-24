@@ -1,5 +1,4 @@
 # Periodic Table
-## And basic chemical calculator
 ---
 **This contains the following features**
 + Periodic Table

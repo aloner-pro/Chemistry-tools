@@ -2,5 +2,6 @@ Intro on Chemist's Tool.docx
 ChemistTool
 logos1
 perio.png
-/.idea
+.idea/**
 test.ipynb
+*.pyc

@@ -8,7 +8,7 @@
 ---
 **This contains the following features**
 + Periodic Table
-+ Moles calculaor
++ Moles calculaor[In previous gen]
 + **Concentration Terms like-**
   1. Mass Percentage
   2. Mole Fraction

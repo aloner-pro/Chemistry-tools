@@ -15,7 +15,7 @@
   3. Molality
   4. Molarity
 
-Here's how the Periodic Table looks like-
+Here's how the Periodic Table looks like after some mod-
 ![Periodic](https://github.com/aloner-pro/Chemistry-tools/blob/master/new.png?raw=true)
 This also contains the actinoids and lanthanoids.
 To see them just click on those lanthanoids and actinoids buttons.

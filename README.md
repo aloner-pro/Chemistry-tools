@@ -4,7 +4,7 @@
 + Main objective to lessen the lines of code.<br>
 + Upgrading the look and feel of the periodic table.
 
-###How does it look
+### How does it look
 Here's how the Periodic Table looks like after some working-
 ![Periodic](https://github.com/aloner-pro/Chemistry-tools/blob/master/new.png?raw=true)
 

@@ -22,7 +22,7 @@ root.config(bg='#A5C9BC')
 root.title('Periodic Table')
 
 # Centering the window
-root_h, root_w = 720, 1200
+root_h, root_w = 710, 1200
 s_w = root.winfo_screenwidth()
 s_h = root.winfo_screenheight()
 x_co = int((s_w / 2) - (root_w / 2))

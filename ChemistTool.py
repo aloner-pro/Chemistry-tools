@@ -38,26 +38,26 @@ def elements_display(ele_name: str, at_no: int, ele_sym: str, at_mass: float, bu
 def ele_7(ele_list, x_, color):
     for a in range(7):
         du = ele_list[a]
-        bu_check2 = Button(root, text=du[0], height=4, width=8, bg=color, relief='groove', font=('Times New Roman', 10))
-        bu_check2.place(x=x_, y=40 + a * 70)
-        elements_display(du[1], du[2], du[0], du[3], bu_check2)
+        bu_7 = Button(root, text=du[0], height=4, width=8, bg=color, relief='groove', font=('Times New Roman', 10))
+        bu_7.place(x=x_, y=40 + a * 70)
+        elements_display(du[1], du[2], du[0], du[3], bu_7)
 
 
 def ele_6(ele_list, x_, color):
     for a in range(6):
         du = ele_list[a]
-        bu_check2 = Button(root, text=du[0], height=4, width=8, bg=color, relief='groove', font=('Times New Roman', 10))
-        bu_check2.place(x=x_, y=110 + a * 70)
-        elements_display(du[1], du[2], du[0], du[3], bu_check2)
+        bu_6 = Button(root, text=du[0], height=4, width=8, bg=color, relief='groove', font=('Times New Roman', 10))
+        bu_6.place(x=x_, y=110 + a * 70)
+        elements_display(du[1], du[2], du[0], du[3], bu_6)
 
 
 def ele_4(ele_list, x_):
     for a in range(4):
         du = ele_list[a]
-        bu_check2 = Button(root, text=du[0], height=4, width=8, bg='#EEE3BC', relief='groove',
-                           font=('Times New Roman', 10))
-        bu_check2.place(x=x_, y=250 + a * 70)
-        elements_display(du[1], du[2], du[0], du[3], bu_check2)
+        bu_4 = Button(root, text=du[0], height=4, width=8, bg='#EEE3BC', relief='groove',
+                      font=('Times New Roman', 10))
+        bu_4.place(x=x_, y=250 + a * 70)
+        elements_display(du[1], du[2], du[0], du[3], bu_4)
 
 
 def lan_act(ele, y_):

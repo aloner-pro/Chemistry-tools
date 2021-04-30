@@ -30,7 +30,7 @@ y_co = int((s_h / 2) - (root_h / 2))
 root.geometry("{}x{}+{}+{}".format(root_w, root_h, x_co, y_co))
 
 
-def elements_display(ele_name: str, at_no: int, ele_sym: str, at_mass: float, button_obj):
+def elements_display(ele_sym: str, ele_name: str, at_no: int, at_mass: float, button_obj):
     ho.create_tool_tip(button_obj, f'Element Symbol: {ele_sym}\nElement Name: {ele_name}\nAtomic Number: {at_no}'
                                    f'\nAtomic Mass: {at_mass}')
 
@@ -40,7 +40,7 @@ def ele_7(ele_list, x_, color):
         du = ele_list[a]
         bu_7 = Button(root, text=du[0], height=4, width=8, bg=color, relief='groove', font=('Times New Roman', 10))
         bu_7.place(x=x_, y=40 + a * 70)
-        elements_display(du[1], du[2], du[0], du[3], bu_7)
+        elements_display(du[0], du[1], du[2], du[3], bu_7)
 
 
 def ele_6(ele_list, x_, color):
@@ -48,7 +48,7 @@ def ele_6(ele_list, x_, color):
         du = ele_list[a]
         bu_6 = Button(root, text=du[0], height=4, width=8, bg=color, relief='groove', font=('Times New Roman', 10))
         bu_6.place(x=x_, y=110 + a * 70)
-        elements_display(du[1], du[2], du[0], du[3], bu_6)
+        elements_display(du[0], du[1], du[2], du[3], bu_6)
 
 
 def ele_4(ele_list, x_):
@@ -57,7 +57,7 @@ def ele_4(ele_list, x_):
         bu_4 = Button(root, text=du[0], height=4, width=8, bg='#EEE3BC', relief='groove',
                       font=('Times New Roman', 10))
         bu_4.place(x=x_, y=250 + a * 70)
-        elements_display(du[1], du[2], du[0], du[3], bu_4)
+        elements_display(du[0], du[1], du[2], du[3], bu_4)
 
 
 def lan_act(ele, y_):
@@ -65,7 +65,7 @@ def lan_act(ele, y_):
         fe = ele[t]
         bu_la = Button(root, text=fe[0], height=4, width=8, bg='#8287B4', relief='groove', font=('Times New Roman', 10))
         bu_la.place(x=135 + t * 66, y=y_)
-        elements_display(fe[1], fe[2], fe[0], fe[3], bu_la)
+        elements_display(fe[0], fe[1], fe[2], fe[3], bu_la)
 
 
 ele_7(g1[:7], 3, '#507F9B')
